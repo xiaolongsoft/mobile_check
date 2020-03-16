@@ -58,6 +58,7 @@ class MainHandler(server.RequestHandler):
             return "true"
 
         return "false"
+    ##截取网页移动端浏览快照
     def get_html_image(self,chrome):
         return chrome.get_screenshot_as_base64()
 
